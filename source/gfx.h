@@ -157,7 +157,8 @@ struct SGFX{
     
     // Screen colors for Mode 7 Ext BG
     //
-    uint16 ScreenColors128[256];
+    uint16 ScreenRGB555toRGBA4[0x10000];
+    uint16 ScreenColors128[256]; 
 
     // Tracks when the palette was last modified.
     //
